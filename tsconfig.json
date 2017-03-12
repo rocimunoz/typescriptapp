@@ -1,0 +1,14 @@
+{
+    "files": [
+        "src/js/main.ts"
+        "typings/*"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "module:": "commonsjs",
+        "target": "es5"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
