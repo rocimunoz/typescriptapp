@@ -1,13 +1,16 @@
-import * as _ from "lodash";
+//import * as _ from "lodash";
 
-function helloWorld(compiler: string) {
-    console.log('Hello from ${compiler}');
+ class Saludos{
+  saludos:string;
+  constructor(message: string) {
+          this.saludos = message;
+      }
+      saludo() {
+          return "Hello, " + this.saludos;
+      }
+
 }
 
-function versionLodash(){
-    console.log('lodash version:', _.VERSION);
-}
-
-helloWorld("TypeScript");
-
-versionLodash();
+var objSaludo = new Saludos("Hello, world!");
+//document.body.innerHTML = objSaludo.saludos;
+alert(objSaludo.saludos);

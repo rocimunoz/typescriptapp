@@ -1,14 +1,18 @@
 {
-    "files": [
+    "include": [
         "src/js/main.ts",
         "typings/*"
     ],
-    "compilerOptions": {
-        "noImplicitAny": true,
-        "module:": "commonsjs",
-        "target": "es5"
-    },
     "exclude": [
         "node_modules"
-    ]
+    ],
+    "compilerOptions": {
+    "target": "es5",
+    "module": "es6",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [ "es2015", "dom" ],
+    "suppressImplicitAnyIndexErrors": true
+    }
 }
