@@ -1,18 +1,18 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const _ = require("lodash");
-class Saludos {
-    constructor(message) {
+var _ = require("lodash");
+var Saludos = (function () {
+    function Saludos(message) {
         this.saludos = message;
     }
-    saludo() {
+    Saludos.prototype.saludo = function () {
         return "Hello, " + this.saludos;
-    }
-    getUpperFirst() {
+    };
+    Saludos.prototype.getUpperFirst = function () {
         return _.upperFirst(this.saludos);
-    }
-}
+    };
+    return Saludos;
+}());
 exports.Saludos = Saludos;
 var objSaludo = new Saludos("hola mundo");
-//document.body.innerHTML = objSaludo.saludos;
 alert(objSaludo.saludos);
